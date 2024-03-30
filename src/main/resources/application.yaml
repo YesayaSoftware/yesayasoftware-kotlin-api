@@ -1,0 +1,17 @@
+jwt:
+  key: ${JWT_KEY}
+  access-token-expiration: 3600000
+  refresh-token-expiration: 86400000
+
+spring:
+  application:
+    name: yesayasoftware
+  datasource:
+    url: jdbc:postgresql://localhost:5432/yesayasoftware-kotlin
+    username: odoo
+    password: odoo
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
